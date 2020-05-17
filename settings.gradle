@@ -1,0 +1,2 @@
+rootProject.name='EntregaSolidaria'
+include ':app'
