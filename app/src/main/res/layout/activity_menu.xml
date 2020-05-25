@@ -15,90 +15,21 @@
         app:layout_constraintGuide_begin="98dp" />
 
     <Button
-        android:id="@+id/btnLogin12"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:text="Cadastrar Entregador"
+        android:id="@+id/btnViewCom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Comércios"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnLogin11"
-        tools:layout_editor_absoluteY="177dp" />
-
-    <Button
-        android:id="@+id/btnLogin2"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:text="Cadastrar Mercado"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnLogin11"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnLogin8"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:text="Cadastrar/Editar Produto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnLogin11"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin12" />
-
-    <Button
-        android:id="@+id/btnLogin13"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:text="Solicitar Pedido"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnLogin11"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin8" />
-
-    <Button
-        android:id="@+id/btnLogin15"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:text="Responder Pedido"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnLogin11"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin13" />
-
-    <Button
-        android:id="@+id/btnLogin11"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="124dp"
-        android:text="Mercados"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnLogin5"
+        android:id="@+id/btnPerfil"
         android:layout_width="90dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -109,66 +40,40 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnLogin3"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Entregadores"
-        app:layout_constraintEnd_toStartOf="@+id/btnLogin12"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin11" />
-
-    <Button
-        android:id="@+id/btnLogin9"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:id="@+id/btnViewProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:text="Produtos"
-        app:layout_constraintEnd_toStartOf="@+id/btnLogin8"
+        app:layout_constraintBottom_toTopOf="@+id/btnViewPed"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnViewCom" />
 
     <Button
-        android:id="@+id/btnLogin10"
-        android:layout_width="170dp"
+        android:id="@+id/btnViewPed"
+        android:layout_width="match_parent"
         android:layout_height="53dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:text="Pedidos"
-        app:layout_constraintEnd_toStartOf="@+id/btnLogin13"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin9" />
+        app:layout_constraintTop_toBottomOf="@+id/btnViewProd" />
 
     <Button
-        android:id="@+id/btnLogin14"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Visualizar Pedidos"
-        app:layout_constraintEnd_toStartOf="@+id/btnLogin15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin10" />
-
-    <Button
-        android:id="@+id/btnLogin4"
+        android:id="@+id/btnExit"
         android:layout_width="121dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="24dp"
         android:text="Sair"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
