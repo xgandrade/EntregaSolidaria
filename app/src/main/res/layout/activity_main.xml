@@ -7,46 +7,34 @@
     tools:context=".MainActivity"
     android:background="@drawable/gradients" >
 
-
     <LinearLayout
-        android:layout_width="500px"
-        android:layout_height="700px"
-        android:layout_marginLeft="130dp"
+        android:id="@+id/imglogoid"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
         android:layout_marginTop="100dp"
-        android:layout_marginRight="130dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="120dp"
         android:background="@mipmap/vazio"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17000002" />
+        android:orientation="vertical" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="206dp"
-        android:layout_height="53dp"
-        android:layout_marginLeft="124dp"
-        android:layout_marginTop="390dp"
-        android:layout_marginRight="124dp"
-        android:text="Entrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/entrar" />
 
     <Button
         android:id="@+id/btnFirstAccess"
-        android:layout_width="209dp"
-        android:layout_height="51dp"
-        android:layout_marginLeft="124dp"
-        android:layout_marginTop="450dp"
-        android:layout_marginRight="124dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:text="Primeiro Acesso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
+
 
 </RelativeLayout>
