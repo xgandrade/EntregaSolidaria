@@ -17,13 +17,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void LoginClick(View view){
-
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 
     public void FirstAccessClick(View view){
-
         Intent intent = new Intent(this, FirstAccessActivity.class);
         startActivity(intent);
     }
