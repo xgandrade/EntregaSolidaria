@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnLogin7"
+        android:id="@+id/btnVoltar"
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_marginEnd="8dp"
