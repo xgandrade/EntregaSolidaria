@@ -1,7 +1,8 @@
 package com.example.entregasolidaria;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class FirstAccessActivity extends AppCompatActivity {
 
