@@ -24,7 +24,8 @@
         android:layout_marginTop="320dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:text="@string/entrar" />
+        android:text="@string/entrar"
+        android:onClick="LoginClick" />
 
     <Button
         android:id="@+id/btnFirstAccess"
@@ -34,7 +35,8 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:text="Primeiro Acesso"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:onClick="FirstAccessClick" />
 
 
 </RelativeLayout>
