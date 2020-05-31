@@ -2,6 +2,8 @@
     <string name="app_name">Entrega Solidaria</string>
     <string name="entrar">Entrar</string>
     <string name="slogan_tx">Suas compras mais perto de você!</string>
-    <string name="todo">TODO</string>
+    <string name="cadastro_user">Cadastro de Usuários</string>
+    <string name="list_mpn">Listar Comércios</string>
+    <string name="voltar">Voltar</string>
     <string name="todo">TODO</string>
 </resources>

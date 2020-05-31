@@ -25,7 +25,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:text="Listar Comércios"
+        android:text="@string/list_mpn"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,13 +43,13 @@
         app:srcCompat="@mipmap/vazio" />
 
     <Button
-        android:id="@+id/btnLogin7"
+        android:id="@+id/btnVoltar"
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Voltar"
+        android:text="@string/voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -57,7 +57,7 @@
         android:id="@+id/ListViewMercados"
         android:layout_width="409dp"
         android:layout_height="576dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin7"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
