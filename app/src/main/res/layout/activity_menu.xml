@@ -28,7 +28,8 @@
         android:text="Comércios"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="ComClick" />
 
     <Button
         android:id="@+id/btnPerfil"
@@ -39,7 +40,8 @@
         android:layout_marginTop="8dp"
         android:text="Perfil"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="PerfilClick" />
 
     <Button
         android:id="@+id/btnViewProd"
@@ -53,7 +55,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btnViewPed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewCom" />
+        app:layout_constraintTop_toBottomOf="@+id/btnViewCom"
+        android:onClick="ProdClick" />
 
     <Button
         android:id="@+id/btnViewPed"
@@ -67,7 +70,8 @@
         android:text="Pedidos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewProd" />
+        app:layout_constraintTop_toBottomOf="@+id/btnViewProd"
+        android:onClick="PedClick" />
 
     <Button
         android:id="@+id/btnExit"
@@ -78,7 +82,8 @@
         android:layout_marginBottom="24dp"
         android:text="Sair"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="ExitClick" />
 
     <ImageView
         android:id="@+id/imageView"

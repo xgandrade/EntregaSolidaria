@@ -23,6 +23,10 @@
         </activity>
         <activity android:name=".FirstAccessActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".ComerciosActivity"></activity>
+        <activity android:name=".ProdutosActivity"></activity>
+        <activity android:name=".PedidosActivity"></activity>
     </application>
 
 </manifest>

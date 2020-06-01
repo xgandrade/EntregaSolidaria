@@ -15,6 +15,10 @@
     <string name="compl">Complemento</string>
     <string name="senha">Senha</string>
     <string name="conf_senha">Confirmar senha</string>
+    <string name="razao">Razão Social</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="phone">Telefone</string>
+    <string name="plus_ped">Adicionar um novo pedido</string>
 
     <string name="todo">TODO</string>
 </resources>
