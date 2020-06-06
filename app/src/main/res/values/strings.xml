@@ -19,6 +19,7 @@
     <string name="cnpj">CNPJ</string>
     <string name="phone">Telefone</string>
     <string name="plus_ped">Adicionar um novo pedido</string>
+    <string name="tpUser">Tipo de usuário</string>
 
     <string name="todo">TODO</string>
 </resources>
