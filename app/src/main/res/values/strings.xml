@@ -20,6 +20,8 @@
     <string name="phone">Telefone</string>
     <string name="plus_ped">Adicionar um novo pedido</string>
     <string name="tpUser">Tipo de usuário</string>
+    <string name="campoVazio">O cadastro está incompleto, preencha todos os dados!</string>
+    <string name="usercadastrado">Cadastro realizado com sucesso!!!</string>
 
     <string name="todo">TODO</string>
 </resources>
