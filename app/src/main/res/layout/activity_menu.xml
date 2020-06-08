@@ -44,34 +44,18 @@
         android:onClick="PerfilClick" />
 
     <Button
-        android:id="@+id/btnViewProd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Produtos"
-        app:layout_constraintBottom_toTopOf="@+id/btnViewPed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewCom"
-        android:onClick="ProdClick" />
-
-    <Button
         android:id="@+id/btnViewPed"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="1dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
+        android:onClick="PedClick"
         android:text="Pedidos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewProd"
-        android:onClick="PedClick" />
+        app:layout_constraintTop_toBottomOf="@+id/btnViewCom" />
 
     <Button
         android:id="@+id/btnExit"
