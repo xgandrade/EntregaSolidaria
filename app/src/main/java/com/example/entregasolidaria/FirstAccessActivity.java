@@ -91,6 +91,10 @@ public class FirstAccessActivity extends AppCompatActivity {
             mostraToastCampoVazio();
             paConfSenha.requestFocus();
             return false;
+        } else if(paSenha != paConfSenha){
+            mostraToastSenhaDif();
+            paConfSenha.requestFocus();
+            return false;
         }
 
         return true;
@@ -98,6 +102,10 @@ public class FirstAccessActivity extends AppCompatActivity {
 
     private void mostraToastCampoVazio(){
         Toast.makeText(this, R.string.campoVazio, Toast.LENGTH_SHORT).show();
+    }
+
+    private void mostraToastSenhaDif(){
+        Toast.makeText(this, R.string.SenhaDif, Toast.LENGTH_SHORT).show();
     }
 
     private boolean isEmpty(EditText edText){
