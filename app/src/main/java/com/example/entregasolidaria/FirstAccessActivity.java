@@ -42,14 +42,14 @@ public class FirstAccessActivity extends AppCompatActivity {
     public void btCadastrar(View v){
         if(validaDados()){
             //validou os campos e pode salvar...
-            FirstAccess.setIdUsuario(-1);
-            FirstAccess.setTipousuario(Tpuser.getText().toString());
-            FirstAccess.setNome(NameUser.getText().toString());
-            FirstAccess.setEmail(paMail.getText().toString());
-            FirstAccess.setEndereco(paEnd.toString());
-            FirstAccess.setSenha(paSenha.toString());
-            FirstAccess.setConfsenha(paConfSenha.toString());
-            FirstAccess.setCpf(Integer.parseInt(paCpf.getText().toString()));
+            primeiroacesso.setIdUsuario(-1);
+            primeiroacesso.setTipousuario(Tpuser.getText().toString());
+            primeiroacesso.setNome(NameUser.getText().toString());
+            primeiroacesso.setEmail(paMail.getText().toString());
+            primeiroacesso.setEndereco(paEnd.toString());
+            primeiroacesso.setSenha(paSenha.toString());
+            primeiroacesso.setConfsenha(paConfSenha.toString());
+            primeiroacesso.setCpf(Integer.parseInt(paCpf.getText().toString()));
 
             try {
                 boolean executou = new PostAPI(primeiroacesso).execute().get();
@@ -91,6 +91,10 @@ public class FirstAccessActivity extends AppCompatActivity {
             mostraToastCampoVazio();
             paConfSenha.requestFocus();
             return false;
+        } else if(paSenha != paConfSenha){
+            mostraToastSenhaDif();
+            paConfSenha.requestFocus();
+            return false;
         }
 
         return true;
@@ -98,6 +102,10 @@ public class FirstAccessActivity extends AppCompatActivity {
 
     private void mostraToastCampoVazio(){
         Toast.makeText(this, R.string.campoVazio, Toast.LENGTH_SHORT).show();
+    }
+
+    private void mostraToastSenhaDif(){
+        Toast.makeText(this, R.string.SenhaDif, Toast.LENGTH_SHORT).show();
     }
 
     private boolean isEmpty(EditText edText){
