@@ -27,15 +27,15 @@ public class FirstAccess {
 
     public FirstAccess(){}
 
-    public int getIdUsuario() {return idUsuario;}
+    public int getIdUsuario() { return idUsuario; }
 
-    public void setIdUsuario(int idUsuario) {this.idUsuario = idUsuario;}
+    public void setIdUsuario(int idUsuario) { idUsuario = idUsuario; }
 
-    public String getNome() {return nome;}
+    public String getNome() { return nome; }
 
-    public void setNome(String nome) {this.nome = nome;}
+    public void setNome(String nome) { this.nome = nome; }
 
-    public String getEmail() {return email;}
+    public String getEmail() { return email; }
 
     public void setEmail(String email) {this.email = email;}
 
