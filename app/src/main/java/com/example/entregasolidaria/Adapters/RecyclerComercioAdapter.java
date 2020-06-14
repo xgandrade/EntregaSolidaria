@@ -8,12 +8,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.entregasolidaria.Model.Comercio;
+import com.example.entregasolidaria.R;
+
 import java.util.List;
 
 public class RecyclerComercioAdapter extends RecyclerView.Adapter<RecyclerComercioAdapter.ViewHolderComercios>{
-    private List<Comercios> dados;
+    private List<Comercio> dados;
 
-    public RecyclerComercioAdapter(List<Comercios> dados){
+    public RecyclerComercioAdapter(List<Comercio> dados){
         this.dados= dados;
     }
 
@@ -35,7 +38,7 @@ public class RecyclerComercioAdapter extends RecyclerView.Adapter<RecyclerComerc
         if ( (dados != null ) && (dados.size() > 0 ) ) {
             Comercio comercio = dados.get(position);
 
-            holder.TxRazao_C.setText(comercio.razao);
+            holder.TxRazao_C.setText(comercio.RazaoSocial);
             holder.TxCNPJ_C.setText(comercio.CNPJ);
         }
     }
