@@ -1,9 +1,7 @@
 package com.example.entregasolidaria.Utils;
 
 import android.os.AsyncTask;
-
 import com.example.entregasolidaria.Model.FirstAccess;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -13,15 +11,13 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
 
-public class PostAPI extends AsyncTask<Void, Void, Boolean> {
+public class PostUserAPI extends AsyncTask<Void, Void, Boolean> {
 
     String jsonInput;
 
-    public PostAPI(FirstAccess primeiroacesso) {
+    public PostUserAPI(FirstAccess primeiroacesso) {
 
     }
 
