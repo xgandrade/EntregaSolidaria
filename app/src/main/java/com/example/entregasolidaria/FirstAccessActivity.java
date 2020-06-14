@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.entregasolidaria.Model.FirstAccess;
 import com.example.entregasolidaria.Model.TipoUsuario;
-import com.example.entregasolidaria.Utils.PostAPI;
+import com.example.entregasolidaria.Utils.PostUserAPI;
 
 public class FirstAccessActivity extends AppCompatActivity {
-    EditText Tpuser, NameUser, paCpf, paMail, paEnd, paSenha, paConfSenha;
+    EditText Tpuser, NameUser, paCpf,  paEnd, paNumEnd, paMail, paPhone,paSenha, paConfSenha;
     Button btCadastrar;
     FirstAccess primeiroacesso = new FirstAccess();
 
@@ -28,8 +28,10 @@ public class FirstAccessActivity extends AppCompatActivity {
         Tpuser      = findViewById(R.id.edTpUser);
         NameUser    = findViewById(R.id.txNome);
         paCpf       = findViewById(R.id.txCPF);
-        paMail      = findViewById(R.id.txMail);
         paEnd       = findViewById(R.id.txEnd);
+        paNumEnd    = findViewById(R.id.txNumEnd);
+        paMail      = findViewById(R.id.txMail);
+        paPhone     = findViewById(R.id.txPhone);
         paSenha     = findViewById(R.id.txSenha);
         paConfSenha = findViewById(R.id.txConfSenha);
 
@@ -45,14 +47,16 @@ public class FirstAccessActivity extends AppCompatActivity {
             primeiroacesso.setIdUsuario(-1);
             primeiroacesso.setTipousuario(Tpuser.getText().toString());
             primeiroacesso.setNome(NameUser.getText().toString());
-            primeiroacesso.setEmail(paMail.getText().toString());
             primeiroacesso.setEndereco(paEnd.toString());
+            primeiroacesso.setNumeroEndereco(Integer.parseInt(paNumEnd.getText().toString()));
+            primeiroacesso.setEmail(paMail.getText().toString());
+            primeiroacesso.setTelefone(Integer.parseInt(paPhone.getText().toString()));
             primeiroacesso.setSenha(paSenha.toString());
             primeiroacesso.setConfsenha(paConfSenha.toString());
             primeiroacesso.setCpf(Integer.parseInt(paCpf.getText().toString()));
 
             try {
-                boolean executou = new PostAPI(primeiroacesso).execute().get();
+                boolean executou = new PostUserAPI(primeiroacesso).execute().get();
             }catch (Exception e){
                 e.printStackTrace();
             }
@@ -75,13 +79,21 @@ public class FirstAccessActivity extends AppCompatActivity {
             mostraToastCampoVazio();
             paCpf.requestFocus();
             return false;
+        } else if(isEmpty(paEnd)){
+            mostraToastCampoVazio();
+            paEnd.requestFocus();
+            return false;
+        } else if(isEmpty(paNumEnd)){
+            mostraToastCampoVazio();
+            paNumEnd.requestFocus();
+            return false;
         } else if(isEmpty(paMail)){
             mostraToastCampoVazio();
             paMail.requestFocus();
             return false;
-        } else if(isEmpty(paEnd)){
+        } else if(isEmpty(paPhone)){
             mostraToastCampoVazio();
-            paEnd.requestFocus();
+            paPhone.requestFocus();
             return false;
         } else if(isEmpty(paSenha)){
             mostraToastCampoVazio();
