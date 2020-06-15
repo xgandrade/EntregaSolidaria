@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.entregasolidaria.Model.FirstAccess;
 import com.example.entregasolidaria.Model.TipoUsuario;
-import com.example.entregasolidaria.Utils.PostAPI;
+import com.example.entregasolidaria.Utils.PostUserAPI;
 
 public class FirstAccessActivity extends AppCompatActivity {
-    EditText Tpuser, NameUser, paCpf, paMail, paEnd, paSenha, paConfSenha;
+    EditText Tpuser, NameUser, paCpf,  paEnd, paNumEnd, paMail, paPhone,paSenha, paConfSenha;
     Button btCadastrar;
     FirstAccess primeiroacesso = new FirstAccess();
 
@@ -26,12 +26,14 @@ public class FirstAccessActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first_access);
 
         Tpuser      = findViewById(R.id.edTpUser);
-        NameUser    = findViewById(R.id.txNome);
-        paCpf       = findViewById(R.id.txCPF);
-        paMail      = findViewById(R.id.txMail);
-        paEnd       = findViewById(R.id.txEnd);
-        paSenha     = findViewById(R.id.txSenha);
-        paConfSenha = findViewById(R.id.txConfSenha);
+        NameUser    = findViewById(R.id.txtNome);
+        paCpf       = findViewById(R.id.txtCpf);
+        paEnd       = findViewById(R.id.txtEnd);
+        paNumEnd    = findViewById(R.id.txtNEnd);
+        paMail      = findViewById(R.id.txtEmail);
+        paPhone     = findViewById(R.id.txtTel);
+        paSenha     = findViewById(R.id.txtSenha);
+        paConfSenha = findViewById(R.id.txtConfSenha);
 
         ArrayAdapter<TipoUsuario> adaptadorTpUsuario = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, TipoUsuario.values());
         AutoCompleteTextView editCampoTpUser = findViewById(R.id.edTpUser);
@@ -42,21 +44,22 @@ public class FirstAccessActivity extends AppCompatActivity {
     public void btCadastrar(View v){
         if(validaDados()){
             //validou os campos e pode salvar...
-//            FirstAccess.setIdUsuario(-1);
-//            FirstAccess.setTipousuario(Tpuser.getText().toString());
-//            FirstAccess.setNome(NameUser.getText().toString());
-//            FirstAccess.setEmail(paMail.getText().toString());
-//            FirstAccess.setEndereco(paEnd.toString());
-//            FirstAccess.setSenha(paSenha.toString());
-//            FirstAccess.setConfsenha(paConfSenha.toString());
-//            FirstAccess.setCpf(Integer.parseInt(paCpf.getText().toString()));
-//
-//            try {
-//                boolean executou = new PostAPI(primeiroacesso).execute().get();
-//            }catch (Exception e){
-//                e.printStackTrace();
-//            }
+            primeiroacesso.setIdUsuario(-1);
+            primeiroacesso.setTipousuario(Tpuser.getText().toString());
+            primeiroacesso.setNome(NameUser.getText().toString());
+            primeiroacesso.setEndereco(paEnd.toString());
+            primeiroacesso.setNumeroEndereco(Integer.parseInt(paNumEnd.getText().toString()));
+            primeiroacesso.setEmail(paMail.getText().toString());
+            primeiroacesso.setTelefone(Integer.parseInt(paPhone.getText().toString()));
+            primeiroacesso.setSenha(paSenha.toString());
+            primeiroacesso.setConfsenha(paConfSenha.toString());
+            primeiroacesso.setCpf(Integer.parseInt(paCpf.getText().toString()));
 
+            try {
+                boolean executou = new PostUserAPI(primeiroacesso).execute().get();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
 
             Toast.makeText(this, R.string.usercadastrado, Toast.LENGTH_SHORT).show();
             finish();
@@ -76,13 +79,21 @@ public class FirstAccessActivity extends AppCompatActivity {
             mostraToastCampoVazio();
             paCpf.requestFocus();
             return false;
+        } else if(isEmpty(paEnd)){
+            mostraToastCampoVazio();
+            paEnd.requestFocus();
+            return false;
+        } else if(isEmpty(paNumEnd)){
+            mostraToastCampoVazio();
+            paNumEnd.requestFocus();
+            return false;
         } else if(isEmpty(paMail)){
             mostraToastCampoVazio();
             paMail.requestFocus();
             return false;
-        } else if(isEmpty(paEnd)){
+        } else if(isEmpty(paPhone)){
             mostraToastCampoVazio();
-            paEnd.requestFocus();
+            paPhone.requestFocus();
             return false;
         } else if(isEmpty(paSenha)){
             mostraToastCampoVazio();
@@ -92,6 +103,10 @@ public class FirstAccessActivity extends AppCompatActivity {
             mostraToastCampoVazio();
             paConfSenha.requestFocus();
             return false;
+        } else if(!paSenha.getText().toString().equals(paConfSenha.getText().toString())){
+            mostraToastSenhaDif();
+            paConfSenha.requestFocus();
+            return false;
         }
 
         return true;
@@ -99,6 +114,10 @@ public class FirstAccessActivity extends AppCompatActivity {
 
     private void mostraToastCampoVazio(){
         Toast.makeText(this, R.string.campoVazio, Toast.LENGTH_SHORT).show();
+    }
+
+    private void mostraToastSenhaDif(){
+        Toast.makeText(this, R.string.SenhaDif, Toast.LENGTH_SHORT).show();
     }
 
     private boolean isEmpty(EditText edText){

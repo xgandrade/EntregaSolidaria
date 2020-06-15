@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">EntregaSolidaria</string>
+    <string name="app_name">Entrega Solidaria</string>
+    <string name="entrar">Entrar</string>
+    <string name="slogan_tx">Suas compras mais perto de você!</string>
+    <string name="cadastro_user">Cadastro de Usuários</string>
+    <string name="list_mpn">Listar Comércios</string>
+    <string name="voltar">Voltar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="nome">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="email">E-Mail</string>
+    <string name="endereco">Endereço</string>
+    <string name="num_end">N° do endereço</string>
+    <string name="compl">Complemento</string>
+    <string name="senha">Senha</string>
+    <string name="conf_senha">Confirmar senha</string>
+    <string name="razao">Razão Social</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="phone">Telefone</string>
+    <string name="plus_ped">Adicionar um novo pedido</string>
+    <string name="tpUser">Tipo de usuário</string>
+    <string name="campoVazio">O cadastro está incompleto, preencha todos os dados!</string>
+    <string name="usercadastrado">Cadastro realizado com sucesso!!!</string>
+    <string name="SenhaDif">As senhas não são iguais, por favor preencha novamente!</string>
+
+    <string name="todo">TODO</string>
 </resources>
