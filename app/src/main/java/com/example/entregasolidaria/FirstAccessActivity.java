@@ -26,14 +26,14 @@ public class FirstAccessActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first_access);
 
         Tpuser      = findViewById(R.id.edTpUser);
-        NameUser    = findViewById(R.id.txNome);
-        paCpf       = findViewById(R.id.txCPF);
-        paEnd       = findViewById(R.id.txEnd);
-        paNumEnd    = findViewById(R.id.txNumEnd);
-        paMail      = findViewById(R.id.txMail);
-        paPhone     = findViewById(R.id.txPhone);
-        paSenha     = findViewById(R.id.txSenha);
-        paConfSenha = findViewById(R.id.txConfSenha);
+        NameUser    = findViewById(R.id.txtNome);
+        paCpf       = findViewById(R.id.txtCpf);
+        paEnd       = findViewById(R.id.txtEnd);
+        paNumEnd    = findViewById(R.id.txtNEnd);
+        paMail      = findViewById(R.id.txtEmail);
+        paPhone     = findViewById(R.id.txtTel);
+        paSenha     = findViewById(R.id.txtSenha);
+        paConfSenha = findViewById(R.id.txtConfSenha);
 
         ArrayAdapter<TipoUsuario> adaptadorTpUsuario = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, TipoUsuario.values());
         AutoCompleteTextView editCampoTpUser = findViewById(R.id.edTpUser);
@@ -103,7 +103,7 @@ public class FirstAccessActivity extends AppCompatActivity {
             mostraToastCampoVazio();
             paConfSenha.requestFocus();
             return false;
-        } else if(paSenha != paConfSenha){
+        } else if(!paSenha.getText().toString().equals(paConfSenha.getText().toString())){
             mostraToastSenhaDif();
             paConfSenha.requestFocus();
             return false;

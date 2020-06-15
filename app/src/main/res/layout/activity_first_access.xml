@@ -45,7 +45,9 @@
                 android:layout_marginTop="5dp"
                 android:hint="@string/nome"
                 app:startIconContentDescription="@string/nome" >
+
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -61,6 +63,7 @@
                 app:startIconContentDescription="@string/cpf" >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCpf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number" />
@@ -76,8 +79,9 @@
                 app:startIconContentDescription="@string/endereco" >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEnd"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"  />
+                    android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -90,6 +94,7 @@
                 app:startIconContentDescription="@string/num_end" >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNEnd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number" />
@@ -105,6 +110,7 @@
                 app:startIconContentDescription="@string/email" >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -119,6 +125,7 @@
                 app:startIconContentDescription="@string/phone" >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtTel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number" />
@@ -134,6 +141,7 @@
                 app:startIconContentDescription="@string/senha" >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtSenha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword" />
@@ -149,6 +157,7 @@
                 app:startIconContentDescription="@string/conf_senha" >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtConfSenha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword" />
