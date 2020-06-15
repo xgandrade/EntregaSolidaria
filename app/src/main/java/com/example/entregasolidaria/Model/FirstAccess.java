@@ -13,10 +13,10 @@ public class FirstAccess {
     private int cpf;
     private int numeroEndereco;
     private int telefone;
-    private boolean cadastrado;
+    private boolean resultado;
 
     public FirstAccess(int idUsuario, String tipousuario, String nome, String email, String endereco,
-                       String senha, String confsenha, int cpf, int numeroEndereco, int telefone, boolean cadastrado) {
+                       String senha, String confsenha, int cpf, int numeroEndereco, int telefone, boolean resultado) {
         this.idUsuario = idUsuario;
         this.tipousuario = tipousuario;
         this.nome = nome;
@@ -27,7 +27,7 @@ public class FirstAccess {
         this.telefone = telefone;
         this.senha = senha;
         this.confsenha = confsenha;
-        this.cadastrado = cadastrado;
+        this.resultado = resultado;
     }
 
     public FirstAccess(){}
@@ -72,8 +72,8 @@ public class FirstAccess {
 
     public void setConfsenha(String confsenha) {this.confsenha = confsenha;}
 
-    public boolean isCadastrado() {return cadastrado;}
+    public boolean isResultado() {return resultado;}
 
-    public void setCadastrado(boolean cadastrado) {this.cadastrado = cadastrado;}
+    public void setResultado(boolean cadastrado) {this.resultado = cadastrado;}
 
 }

@@ -1,7 +1,10 @@
 package com.example.entregasolidaria.Utils;
 
 import android.os.AsyncTask;
+
 import com.example.entregasolidaria.Model.FirstAccess;
+import com.google.gson.Gson;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -15,9 +18,13 @@ import java.net.URL;
 
 public class PostUserAPI extends AsyncTask<Void, Void, Boolean> {
 
+    StringBuilder resposta = new StringBuilder();
+
     String jsonInput;
 
     public PostUserAPI(FirstAccess primeiroacesso) {
+        Gson gson = new Gson();
+        jsonInput = gson.toJson(primeiroacesso);
 
     }
 
