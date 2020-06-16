@@ -22,6 +22,7 @@
     <string name="tpUser">Tipo de usuário</string>
     <string name="campoVazio">O cadastro está incompleto, preencha todos os dados!</string>
     <string name="usercadastrado">Cadastro realizado com sucesso!!!</string>
+    <string name="LoginOK">Login realizado com sucesso!!!</string>
     <string name="SenhaDif">As senhas não são iguais, por favor preencha novamente!</string>
 
     <string name="todo">TODO</string>

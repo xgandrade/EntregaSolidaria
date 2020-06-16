@@ -50,7 +50,8 @@
         android:layout_marginBottom="8dp"
         android:text="@string/voltar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="BackComClick" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ListViewMercados"
