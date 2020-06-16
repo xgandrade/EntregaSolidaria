@@ -56,14 +56,13 @@ public class RecyclerPedidoAdapter extends RecyclerView.Adapter<RecyclerPedidoAd
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-//            idPedido              = itemView.findViewById(R.id.idUsuarioSolic);
-//            idUsuarioSolic        = itemView.findViewById(R.id.tvPlaca);
-//            idUsuarioEntreg       = itemView.findViewById(R.id.idUsuarioEntreg);
-//            statusPedido          = itemView.findViewById(R.id.statusPedido);
-//            dataSolicitada        = itemView.findViewById(R.id.dataSolicitada);
-//            dataFinalizada        = itemView.findViewById(R.id.dataFinalizada);
-//            idUsuarioEntreg       = itemView.findViewById(R.id.idUsuarioEntreg);
-//            usuariosNotificados   = itemView.findViewById(R.id.usuariosNotificados);
+            idPedido              = itemView.findViewById(R.id.idPedido);
+            idUsuarioSolic        = itemView.findViewById(R.id.idUsuarioSolic);
+            idUsuarioEntreg       = itemView.findViewById(R.id.idUsuarioEntreg);
+            statusPedido          = itemView.findViewById(R.id.statusPedido);
+            dataSolicitada        = itemView.findViewById(R.id.dataSolicitada);
+            dataFinalizada        = itemView.findViewById(R.id.dataFinalizada);
+            usuariosNotificados   = itemView.findViewById(R.id.usuariosNotificados);
         }
     }
 }
