@@ -24,8 +24,8 @@ public class PedidosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listar_pedidos);
 
         Pedido pedido1 = new Pedido( 1, 2, 3 , 0, "14/06/2020", "15/06/2020", "10 usuários" );
-        Pedido pedido2 = new Pedido( 1, 2, 3 , 0, "14/06/2020", "15/06/2020", "10 usuários" );
-        Pedido pedido3 = new Pedido( 1, 2, 3 , 0, "14/06/2020", "15/06/2020", "10 usuários" );
+        Pedido pedido2 = new Pedido( 2, 2, 3 , 0, "14/06/2020", "15/06/2020", "10 usuários" );
+        Pedido pedido3 = new Pedido( 3, 2, 3 , 0, "14/06/2020", "15/06/2020", "10 usuários" );
 
         pedidos.add(pedido1);
         pedidos.add(pedido2);

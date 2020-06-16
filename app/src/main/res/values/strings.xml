@@ -26,4 +26,12 @@
     <string name="SenhaDif">As senhas não são iguais, por favor preencha novamente!</string>
 
     <string name="todo">TODO</string>
+    <string name="cadastro_de_pedidos">Cadastro de pedidos</string>
+    <string name="usuario">Usuario</string>
+    <string name="mercado">Mercado</string>
+    <string name="produtos">Produtos</string>
+    <string name="status">Status</string>
+    <string name="tipo">Tipo</string>
+    <string name="data">Data</string>
+
 </resources>
