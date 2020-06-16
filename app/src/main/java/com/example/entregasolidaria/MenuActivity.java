@@ -26,36 +26,13 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void ProdClick(View view){
-        Intent intent = new Intent(this, ProdutosActivity.class);
-        startActivity(intent);
-    }
-
     public void PedClick(View view){
         Intent intent = new Intent(this, PedidosActivity.class);
         startActivity(intent);
     }
 
-    public void ExitClick(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(MenuActivity.this);
-        builder.setMessage("Do you want to exit?");
-        builder.setCancelable(true);
-        builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-                System.exit(0);
-
-            }
-        });
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        AlertDialog alert = builder.create();
-        alert.show();
+    public void MainClick(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
-
 }
