@@ -38,8 +38,12 @@ public class RecyclerComercioAdapter extends RecyclerView.Adapter<RecyclerComerc
         if ( (dados != null ) && (dados.size() > 0 ) ) {
             Comercio comercio = dados.get(position);
 
-            holder.TxRazao_C.setText(comercio.RazaoSocial);
-            holder.TxCNPJ_C.setText(comercio.CNPJ);
+            holder.txRazao.setText(comercio.RazaoSocial);
+            holder.txCNPJ.setText(comercio.CNPJ);
+            holder.txMail.setText(comercio.txMail);
+            holder.txEnd.setText(comercio.txEnd);
+            holder.txPhone.setText(comercio.txPhone);
+
         }
     }
 
@@ -50,14 +54,20 @@ public class RecyclerComercioAdapter extends RecyclerView.Adapter<RecyclerComerc
 
     public class ViewHolderComercios extends RecyclerView.ViewHolder{
 
-        public TextView TxRazao_C;
-        public TextView TxCNPJ_C;
+        public TextView txRazao;
+        public TextView txCNPJ;
+        public TextView txMail;
+        public TextView txEnd;
+        public TextView txPhone;
 
         public ViewHolderComercios(@NonNull View itemView) {
             super(itemView);
 
-            TxRazao_C  = (TextView) itemView.findViewById(R.id.TxRazao_C);
-            TxCNPJ_C   = (TextView)itemView.findViewById(R.id.TxCNPJ_C);
+            txRazao   = (TextView) itemView.findViewById(R.id.txRazao);
+            txCNPJ    = (TextView)itemView.findViewById(R.id.txCNPJ);
+            txMail    = (TextView) itemView.findViewById(R.id.txMail);
+            txEnd     = (TextView)itemView.findViewById(R.id.txEnd);
+            txPhone   = (TextView)itemView.findViewById(R.id.txPhone);
 
         }
     }

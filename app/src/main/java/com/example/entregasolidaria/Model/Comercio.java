@@ -11,6 +11,9 @@ public class Comercio {
     public int IdUsuario;
     public Date HoraInicio;
     public Date HoraFim;
+    public int txMail;
+    public int txEnd;
+    public int txPhone;
 
 
     public Comercio(int IdMercado, String RazaoSocial, String MercadoEndereco, String CNPJ, String MercadoTelefone,
