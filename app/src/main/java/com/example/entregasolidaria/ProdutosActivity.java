@@ -41,6 +41,14 @@ public class ProdutosActivity extends AppCompatActivity {
         produtos.add(new Produto(2,1,55.50,"Kit Kat Branco",500));
         produtos.add(new Produto(3,1,33.50,"Kit Kat Preto",500));
         produtos.add(new Produto(4,1,80.50,"Kit Kat Verde",500));
+        produtos.add(new Produto(1,1,12.50,"Kit Kat",500));
+        produtos.add(new Produto(2,1,55.50,"Kit Kat Branco",500));
+        produtos.add(new Produto(3,1,33.50,"Kit Kat Preto",500));
+        produtos.add(new Produto(4,1,80.50,"Kit Kat Verde",500));
+        produtos.add(new Produto(1,1,12.50,"Kit Kat",500));
+        produtos.add(new Produto(2,1,55.50,"Kit Kat Branco",500));
+        produtos.add(new Produto(3,1,33.50,"Kit Kat Preto",500));
+        produtos.add(new Produto(4,1,80.50,"Kit Kat Verde",500));
     }
 
     public void VoltarClick(View view){
