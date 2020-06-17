@@ -1,5 +1,7 @@
 package com.example.entregasolidaria.Adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.entregasolidaria.ComerciosActivity;
 import com.example.entregasolidaria.Model.Comercio;
+import com.example.entregasolidaria.ProdutosActivity;
 import com.example.entregasolidaria.R;
 
 import java.util.List;
@@ -61,6 +64,14 @@ public class RecyclerComercioAdapter extends RecyclerView.Adapter<RecyclerComerc
         public ViewHolderComercios(@NonNull View itemView) {
             super(itemView);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context, ProdutosActivity.class);
+                    context.startActivity(intent);
+                }
+            });
             txRazao = itemView.findViewById(R.id.txRazao);
             txCNPJ = itemView.findViewById(R.id.TxCNPJ_C);
             txEnd = itemView.findViewById(R.id.txEnd);

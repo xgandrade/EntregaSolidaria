@@ -3,6 +3,7 @@ package com.example.entregasolidaria;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -11,15 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.entregasolidaria.Adapters.RecyclerComercioAdapter;
 import com.example.entregasolidaria.Model.Comercio;
-import com.example.entregasolidaria.Model.Produto;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class ComerciosActivity extends AppCompatActivity {
 
     ArrayList<Comercio> comercios = new ArrayList<>();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
