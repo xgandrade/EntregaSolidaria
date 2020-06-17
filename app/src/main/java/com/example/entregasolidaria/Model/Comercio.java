@@ -9,15 +9,11 @@ public class Comercio {
     public String CNPJ;
     public String MercadoTelefone;
     public int IdUsuario;
-    public Date HoraInicio;
-    public Date HoraFim;
-    public int txMail;
-    public int txEnd;
-    public int txPhone;
-
+    public String HoraInicio;
+    public String HoraFim;
 
     public Comercio(int IdMercado, String RazaoSocial, String MercadoEndereco, String CNPJ, String MercadoTelefone,
-                    Date HoraInicio, Date HoraFim, int IdUsuario) {
+                    String HoraInicio, String HoraFim, int IdUsuario) {
         this.IdMercado = IdMercado;
         this.RazaoSocial = RazaoSocial;
         this.MercadoEndereco = MercadoEndereco;
@@ -76,19 +72,19 @@ public class Comercio {
         IdUsuario = idUsuario;
     }
 
-    public Date getHoraInicio() {
+    public String getHoraInicio() {
         return HoraInicio;
     }
 
-    public void setHoraInicio(Date horaInicio) {
+    public void setHoraInicio(String horaInicio) {
         HoraInicio = horaInicio;
     }
 
-    public Date getHoraFim() {
+    public String getHoraFim() {
         return HoraFim;
     }
 
-    public void setHoraFim(Date horaFim) {
+    public void setHoraFim(String horaFim) {
         HoraFim = horaFim;
     }
 }
