@@ -1,5 +1,6 @@
 package com.example.entregasolidaria.Adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,18 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.entregasolidaria.Model.Comercio;
+import com.example.entregasolidaria.Model.Pedido;
 import com.example.entregasolidaria.R;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class RecyclerComercioAdapter extends RecyclerView.Adapter<RecyclerComercioAdapter.ViewHolderComercios>{
-    private List<Comercio> dados;
-
-    public RecyclerComercioAdapter(List<Comercio> dados){
-        this.dados= dados;
+    Context contexto;
+    ArrayList<Comercio> comercios;
+    
+    public RecyclerPedidoAdapter(Context contexto, ArrayList<Pedido> pedidos){
+        this.pedidos = pedidos;
+        this.contexto = contexto;
     }
-
-
     @NonNull
     @Override
     public RecyclerComercioAdapter.ViewHolderComercios onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
