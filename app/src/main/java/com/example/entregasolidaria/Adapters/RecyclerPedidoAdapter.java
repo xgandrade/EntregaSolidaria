@@ -41,7 +41,6 @@ public class RecyclerPedidoAdapter extends RecyclerView.Adapter<RecyclerPedidoAd
         holder.statusPedido.setText(String.valueOf(pedidos.get(position).getStatusPedido()));
         holder.dataSolicitada.setText(pedidos.get(position).getDataSolicitada());
         holder.dataFinalizada.setText(pedidos.get(position).getDataFinalizada());
-        holder.usuariosNotificados.setText(pedidos.get(position).getUsuariosNotificados());
 
     }
 
@@ -62,7 +61,6 @@ public class RecyclerPedidoAdapter extends RecyclerView.Adapter<RecyclerPedidoAd
             statusPedido = itemView.findViewById(R.id.statusPedido);
             dataSolicitada = itemView.findViewById(R.id.dataSolicitada);
             dataFinalizada = itemView.findViewById(R.id.dataFinalizada);
-            usuariosNotificados = itemView.findViewById(R.id.usuariosNotificados);
         }
     }
 }

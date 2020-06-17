@@ -50,6 +50,11 @@ public class PedidosActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void voltarPedidoClick(View v){
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
+    }
+
     private void iniciaRecyclerView() {
         RecyclerView rv = findViewById(R.id.ListViewMercados);
         RecyclerPedidoAdapter adaptador = new RecyclerPedidoAdapter(this, pedidos);
