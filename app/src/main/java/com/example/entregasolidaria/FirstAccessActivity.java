@@ -42,7 +42,7 @@ public class FirstAccessActivity extends AppCompatActivity {
     }
 
     public void btCadastrar(View view){
-        /*if(validaDados()){
+        if(validaDados()){/*
             //validou os campos e pode salvar...
             primeiroacesso.setIdUsuario(-1);
             primeiroacesso.setTipousuario(Tpuser.getText().toString());
@@ -61,13 +61,13 @@ public class FirstAccessActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             Toast.makeText(this, R.string.usercadastrado, Toast.LENGTH_SHORT).show();
-            finish();
-        }*/
-        Intent intent = new Intent(this, MenuActivity.class);
-        startActivity(intent);
+            finish();*/
+            Intent intent = new Intent(this, MenuActivity.class);
+            startActivity(intent);
 
-        Toast.makeText(this, R.string.usercadastrado, Toast.LENGTH_SHORT).show();
-        finish();
+            Toast.makeText(this, R.string.usercadastrado, Toast.LENGTH_SHORT).show();
+            finish();
+        }
     }
 
     private boolean validaDados(){

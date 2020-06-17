@@ -20,21 +20,21 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/txUser"
+        android:id="@+id/CPFUserID"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:hint="Usuario"
+        android:hint="CPF"
         android:inputType="textPersonName"
         android:textSize="16dp"
         android:layout_marginBottom="25dp"
-        android:layout_above="@+id/SenhaTx"
+        android:layout_above="@+id/SenhaUserID"
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/SenhaTx"
+        android:id="@+id/SenhaUserID"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:background="#11000000"
@@ -44,8 +44,8 @@
         android:inputType="textPassword"
         android:layout_marginBottom="70dp"
         android:layout_alignBottom="@+id/cardViewConf"
-        android:layout_alignLeft="@+id/txUser"
-        android:layout_alignStart="@+id/txUser" />
+        android:layout_alignLeft="@+id/CPFUserID"
+        android:layout_alignStart="@+id/CPFUserID" />
 
     <RelativeLayout
         android:layout_width="300dp"
