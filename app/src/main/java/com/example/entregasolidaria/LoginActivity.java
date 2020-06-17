@@ -8,14 +8,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.entregasolidaria.Utils.HttpService;
-
-import java.lang.reflect.Type;
-import java.util.List;
-import java.util.concurrent.ExecutionException;
+import com.example.entregasolidaria.Model.Login;
 
 public class LoginActivity extends AppCompatActivity {
     EditText cpfuser, userSenha;
+
+    Login entrar = new Login();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +48,11 @@ public class LoginActivity extends AppCompatActivity {
             mostraToastCampoVazio();
             userSenha.requestFocus();
             return false;
+        }else if (userSenha.getText().toString().equals("123456")){
+            entrar.setTipousuario(1);
+            return true;
         }
+
         return true;
     }
 
