@@ -9,8 +9,7 @@ public class Pedido {
     private String dataFinalizada;
     private String usuariosNotificados;
 
-    // private int merc_idMercado;
-    // private String prodPed_Produtos;
+    // Variáveis que virão de outra tabela int merc_idMercado e String prodPed_Produtos;
 
     // Método Construtor
     public Pedido(int idPedido, int idUsuarioSolic, int idUsuarioEntreg, int statusPedido, String dataSolicitada, String dataFinalizada, String usuariosNotificados) {

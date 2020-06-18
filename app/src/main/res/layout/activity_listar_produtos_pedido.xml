@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradients">
+    android:layout_height="match_parent">
 
     <View
         android:id="@+id/view"
@@ -24,7 +23,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:text="@string/listar_produtos"
+        android:text="Detalhes do pedido"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +35,6 @@
         android:layout_height="89dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/vazio" />
@@ -53,15 +51,15 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RecyclerProduto"
-        android:layout_width="427dp"
-        android:layout_height="604dp"
-        android:layout_marginBottom="2dp"
+        android:id="@+id/RecyclerProdutoPedido"
+        android:layout_width="409dp"
+        android:layout_height="567dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 </androidx.constraintlayout.widget.ConstraintLayout>

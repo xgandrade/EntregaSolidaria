@@ -14,7 +14,6 @@
         android:background="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="305dp"
@@ -43,17 +42,18 @@
 
     <Button
         android:id="@+id/btnVoltar"
-        android:layout_width="140dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="BackComClick"
         android:text="@string/voltar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/ListViewMercados"
+
+        android:id="@+id/ListViewComercio"
         android:layout_width="409dp"
         android:layout_height="576dp"
         app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
@@ -61,35 +61,34 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"/>
 
-        <TextView
-            android:id="@+id/TxRazao_C"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="24dp"
-            android:paddingLeft="16dp"
-            android:paddingTop="16dp"
-            android:text="Razão Social "
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/TxCNPJ_C"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            android:paddingLeft="16dp"
-            android:paddingTop="16dp"
-            android:text="CNPJ"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerComercio"
+            android:layout_width="409dp"
+            android:layout_height="576dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.042"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/plus_ped"
+        android:onClick="CriaComClick"
+        android:src="@drawable/ic_plus"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

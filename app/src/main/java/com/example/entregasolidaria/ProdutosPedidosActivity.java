@@ -14,22 +14,21 @@ import com.example.entregasolidaria.Model.Produto;
 
 import java.util.ArrayList;
 
-public class ProdutosActivity extends AppCompatActivity {
+class ProdutosPedidosActivity extends AppCompatActivity {
 
     ArrayList<Produto> produtos = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listar_produtos_comercio);
+        setContentView(R.layout.activity_listar_produtos_pedido);
 
         iniciaRecyclerView();
     }
 
-
     private void iniciaRecyclerView(){
         iniciaListaProdutos();
-        RecyclerView rv = findViewById(R.id.RecyclerProduto);
+        RecyclerView rv = findViewById(R.id.RecyclerProdutoPedido);
         RecyclerProdutoAdapter adaptador = new RecyclerProdutoAdapter(this, produtos);
         rv.setAdapter(adaptador);
         rv.addItemDecoration(new DividerItemDecoration(rv.getContext(), DividerItemDecoration.VERTICAL));
@@ -52,7 +51,7 @@ public class ProdutosActivity extends AppCompatActivity {
     }
 
     public void VoltarClick(View view){
-        Intent intent = new Intent(this, ComerciosActivity.class);
+        Intent intent = new Intent(this, PedidosActivity.class);
         startActivity(intent);
     }
 }

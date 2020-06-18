@@ -41,8 +41,8 @@ public class FirstAccessActivity extends AppCompatActivity {
         editCampoTpUser.setKeyListener(null);
     }
 
-    public void btCadastrar(View v){
-        if(validaDados()){
+    public void btCadastrar(View view){
+        if(validaDados()){/*
             //validou os campos e pode salvar...
             primeiroacesso.setIdUsuario(-1);
             primeiroacesso.setTipousuario(Tpuser.getText().toString());
@@ -60,6 +60,10 @@ public class FirstAccessActivity extends AppCompatActivity {
             }catch (Exception e){
                 e.printStackTrace();
             }
+            Toast.makeText(this, R.string.usercadastrado, Toast.LENGTH_SHORT).show();
+            finish();*/
+            Intent intent = new Intent(this, MenuActivity.class);
+            startActivity(intent);
 
             Toast.makeText(this, R.string.usercadastrado, Toast.LENGTH_SHORT).show();
             finish();

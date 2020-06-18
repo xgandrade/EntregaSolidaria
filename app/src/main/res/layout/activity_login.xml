@@ -20,21 +20,21 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/txUser"
+        android:id="@+id/CPFUserID"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:hint="Usuario"
-        android:inputType="textPersonName"
+        android:hint="CPF"
+        android:inputType="number"
         android:textSize="16dp"
         android:layout_marginBottom="25dp"
-        android:layout_above="@+id/SenhaTx"
+        android:layout_above="@+id/SenhaUserID"
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/SenhaTx"
+        android:id="@+id/SenhaUserID"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:background="#11000000"
@@ -44,8 +44,8 @@
         android:inputType="textPassword"
         android:layout_marginBottom="70dp"
         android:layout_alignBottom="@+id/cardViewConf"
-        android:layout_alignLeft="@+id/txUser"
-        android:layout_alignStart="@+id/txUser" />
+        android:layout_alignLeft="@+id/CPFUserID"
+        android:layout_alignStart="@+id/CPFUserID" />
 
     <RelativeLayout
         android:layout_width="300dp"
@@ -59,14 +59,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <Button
                 android:id="@+id/textViewConf"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="Confirmar"
-                android:textColor="#fff"
-                android:textSize="18sp" />
+                android:onClick="LoginClick" />
         </RelativeLayout>
 
     </RelativeLayout>
@@ -83,14 +82,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <Button
                 android:id="@+id/textViewBack"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="Voltar"
-                android:textColor="#fff"
-                android:textSize="18sp"
                 android:onClick="BackClick"/>
         </RelativeLayout>
 

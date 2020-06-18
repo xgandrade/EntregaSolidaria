@@ -3,7 +3,7 @@
     <string name="entrar">Entrar</string>
     <string name="slogan_tx">Suas compras mais perto de você!</string>
     <string name="cadastro_user">Cadastro de Usuários</string>
-    <string name="list_mpn">Listar Comércios</string>
+    <string name="list_mpn">Comércios</string>
     <string name="voltar">Voltar</string>
     <string name="confirmar">Confirmar</string>
     <string name="cancel">Cancelar</string>
@@ -22,7 +22,23 @@
     <string name="tpUser">Tipo de usuário</string>
     <string name="campoVazio">O cadastro está incompleto, preencha todos os dados!</string>
     <string name="usercadastrado">Cadastro realizado com sucesso!!!</string>
+    <string name="LoginOK">Login realizado com sucesso!!!</string>
     <string name="SenhaDif">As senhas não são iguais, por favor preencha novamente!</string>
+    <string name="LoginFail">Nem todos os campos foram preenchidos, preencha todos os dados!</string>
 
     <string name="todo">TODO</string>
+    <string name="cadastro_de_pedidos">Cadastro de pedidos</string>
+    <string name="usuario">Usuario</string>
+    <string name="mercado">Mercado</string>
+    <string name="produtos">Produtos</string>
+    <string name="status">Status</string>
+    <string name="tipo">Tipo</string>
+    <string name="data">Data</string>
+    <string name="com_rcios">Comércios</string>
+    <string name="perfil">Perfil</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="listar_produtos">Produtos</string>
+    <string name="pre_o">Preço:</string>
+    <string name="estoque">Estoque:</string>
+
 </resources>
