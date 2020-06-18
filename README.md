@@ -1,4 +1,4 @@
-# EntregaSolidaria
+# Entrega Solidaria
 Projeto 7° semestre
 
 
