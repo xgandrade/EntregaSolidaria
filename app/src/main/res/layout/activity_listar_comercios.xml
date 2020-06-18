@@ -81,7 +81,7 @@
         android:layout_height="45dp"
         android:layout_marginEnd="252dp"
         android:layout_marginBottom="8dp"
-        android:onClick="BackComClick"
+        android:onClick="CriaComClick"
         android:text="@string/cadastro_user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -56,4 +56,9 @@ public class ComerciosActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void CriaComClick(View view){
+        Intent intent = new Intent(this, CadastroComercioActivity.class);
+        startActivity(intent);
+    }
+
 }

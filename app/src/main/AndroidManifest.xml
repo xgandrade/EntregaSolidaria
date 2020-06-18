@@ -29,6 +29,8 @@
         <activity android:name=".ComerciosActivity"></activity>
         <activity android:name=".ProdutosActivity"></activity>
         <activity android:name=".PedidosActivity"></activity>
+        <activity android:name=".CadastroComercioActivity"></activity>
+        <activity android:name=".CadastroPedidoActivity"></activity>
     </application>
 
 </manifest>
