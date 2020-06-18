@@ -37,17 +37,26 @@ public class ComerciosActivity extends AppCompatActivity {
 
     private void iniciaListaComercios() {
 
-        comercios.add(new Comercio(1,"Mercadinho da esquina",
-                "rua teste 123","Kit Kat","500", "26/06/2020",
+        comercios.add(new Comercio(1,"Sonda Supermercados - Tatuapé",
+                "Rua Apucarana, 1000","01.937.635/0001.","(11) 2588-0500", "26/06/2020",
                 "26/06/2020",1));
-        comercios.add(new Comercio(1,"Mercadinho da esquina",
-                "rua teste 123","Kit Kat","500", "26/06/2020",
+        comercios.add(new Comercio(1,"Extra Hipermercado",
+                "Av.Brigadeiro Faria Lima, 1193","01.937.635/0001","0800 11 5060", "26/06/2020",
                 "26/06/2020",1));
-        comercios.add(new Comercio(1,"Mercadinho da esquina",
-                "rua teste 123","Kit Kat","500", "26/06/2020",
+        comercios.add(new Comercio(1,"Carrefour Hipermercado",
+                "Av. Benjamin Harris Hunicutt, s/n","45.543.915/0001-81","(11) 2453-8200", "26/06/2020",
                 "26/06/2020",1));
-        comercios.add(new Comercio(1,"Mercadinho da esquina",
-                "rua teste 123","Kit Kat","500", "26/06/2020",
+        comercios.add(new Comercio(1,"Nova Farma Centro",
+                "Av. Salgado Filho, 2544 - Centro,","60.975.075/0001-10","(11) 4803-9300", "26/06/2020",
+                "26/06/2020",1));
+        comercios.add(new Comercio(1,"Sonda Supermercados - São Paulo",
+                "Rua Apucarana, 1000","01.937.635/0001.","(11) 2588-0500", "26/06/2020",
+                "26/06/2020",1));
+        comercios.add(new Comercio(1,"Drogasil Carrefour Guarulhos",
+                "Av.Brigadeiro Faria Lima, 1193","01.937.635/0001","0800 11 5060", "26/06/2020",
+                "26/06/2020",1));
+        comercios.add(new Comercio(1,"Drogaria Calazans",
+                "Av.Rua Apucarana, Faria Lima, 1193","01.937.635/0001","0800 11 5060", "26/06/2020",
                 "26/06/2020",1));
     }
 
