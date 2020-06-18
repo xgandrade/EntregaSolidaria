@@ -45,7 +45,7 @@ public class PedidosActivity extends AppCompatActivity {
     }
 
     //Quando clicado vai para tela de cadastro de pedido
-    public void novoPedidoClick(View v) {
+    public void ClickNovoPed(View v) {
         Intent intent = new Intent(this, CadastroPedidoActivity.class);
         startActivity(intent);
     }
