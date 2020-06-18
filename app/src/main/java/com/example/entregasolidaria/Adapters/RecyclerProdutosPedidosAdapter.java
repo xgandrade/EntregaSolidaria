@@ -58,7 +58,7 @@ public class RecyclerProdutosPedidosAdapter extends RecyclerView.Adapter<Recycle
                 @Override
                 public void onClick(View v) {
                     Context context = v.getContext();
-                    Intent intent = new Intent(context, ProdutosPedidos.class);
+                    Intent intent = new Intent(context, ProdutosActivity.class);
                     context.startActivity(intent);
                 }
             });
