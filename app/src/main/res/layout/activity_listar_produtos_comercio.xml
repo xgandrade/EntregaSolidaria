@@ -7,6 +7,21 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradients">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/id_addProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/plus_ped"
+        android:onClick="ClickNovoProd"
+        android:src="@drawable/ic_plus"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
