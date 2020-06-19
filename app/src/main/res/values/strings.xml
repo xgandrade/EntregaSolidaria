@@ -40,5 +40,15 @@
     <string name="listar_produtos">Produtos</string>
     <string name="pre_o">Preço:</string>
     <string name="estoque">Estoque:</string>
+    <string name="cadPedOk">Pedido cadastrado com sucesso!</string>
+
+    //String da tela cadastro de produto
+    <string name="idProduto">Id do produto</string>
+    <string name="mercado2">Mercado</string>
+    <string name="preco">Preço</string>
+    <string name="descricao">Descrição</string>
+    <string name="estoque2">Estoque</string>
+    <string name="cadProdOk">Produto cadastrado com sucesso!</string>
+    <string name="cadComOk">Comércio cadastrado com sucesso!</string>
 
 </resources>

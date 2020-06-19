@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
 
             Toast.makeText(this, R.string.LoginOK, Toast.LENGTH_SHORT).show();
-            finish();
+            //finish();
         }
     }
 

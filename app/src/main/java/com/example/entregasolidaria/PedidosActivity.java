@@ -23,6 +23,7 @@ public class PedidosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listar_pedidos);
 
+        //Preenchendo os pedidos para serem mostrados na lista
         Pedido pedido1 = new Pedido( 1, 2, 3 , 0, "14/06/2020", "15/06/2020", "10 usuários" );
         Pedido pedido2 = new Pedido( 2, 2, 3 , 0, "14/06/2020", "15/06/2020", "10 usuários" );
         Pedido pedido3 = new Pedido( 3, 2, 3 , 0, "14/06/2020", "15/06/2020", "10 usuários" );
@@ -49,14 +50,14 @@ public class PedidosActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CadastroPedidoActivity.class);
         startActivity(intent);
     }
-
+    // Quando clicado volta para menu inicial
     public void voltarPedidoClick(View v){
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
     }
-
+    //Inicia a recycler de pedidos
     private void iniciaRecyclerView() {
-        RecyclerView rv = findViewById(R.id.ListViewMercados);
+        RecyclerView rv = findViewById(R.id.RecyclerPedido);
         RecyclerPedidoAdapter adaptador = new RecyclerPedidoAdapter(this, pedidos);
         rv.setAdapter(adaptador);
         rv.addItemDecoration(new DividerItemDecoration(rv.getContext(), DividerItemDecoration.VERTICAL));

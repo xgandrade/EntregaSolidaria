@@ -31,6 +31,8 @@
         <activity android:name=".PedidosActivity"></activity>
         <activity android:name=".CadastroComercioActivity"></activity>
         <activity android:name=".CadastroPedidoActivity"></activity>
+        <activity android:name=".ProdutosPedidosActivity"></activity>
+        <activity android:name=".CadastroProdutoActivity"></activity>
     </application>
 
 </manifest>
