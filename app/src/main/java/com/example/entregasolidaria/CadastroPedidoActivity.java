@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.entregasolidaria.Model.EscolherComercio;
-import com.example.entregasolidaria.Model.TipoUsuario;
 
 public class CadastroPedidoActivity extends AppCompatActivity {
     @Override
@@ -40,6 +40,9 @@ public class CadastroPedidoActivity extends AppCompatActivity {
     public void btCadastrar (View v){
         Intent intent = new Intent(this, PedidosActivity.class) ;
         startActivity(intent);
+
+        Toast.makeText(this, R.string.cadPedOk, Toast.LENGTH_SHORT).show();
+        finish();
     }
 
 }

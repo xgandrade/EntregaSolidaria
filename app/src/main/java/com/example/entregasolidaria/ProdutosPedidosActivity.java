@@ -14,7 +14,7 @@ import com.example.entregasolidaria.Model.Produto;
 
 import java.util.ArrayList;
 
-class ProdutosPedidosActivity extends AppCompatActivity {
+public class ProdutosPedidosActivity extends AppCompatActivity {
 
     ArrayList<Produto> produtos = new ArrayList<>();
 

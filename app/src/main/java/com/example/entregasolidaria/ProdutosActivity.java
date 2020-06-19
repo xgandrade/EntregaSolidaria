@@ -55,4 +55,9 @@ public class ProdutosActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ComerciosActivity.class);
         startActivity(intent);
     }
+
+    public void ClickNovoProd(View v) {
+        Intent intent = new Intent(this, CadastroProdutoActivity.class);
+        startActivity(intent);
+    }
 }

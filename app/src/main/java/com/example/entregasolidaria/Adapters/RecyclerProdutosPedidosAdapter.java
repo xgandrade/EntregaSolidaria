@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.entregasolidaria.Model.Produto;
 import com.example.entregasolidaria.ProdutosActivity;
+import com.example.entregasolidaria.ProdutosPedidosActivity;
 import com.example.entregasolidaria.R;
 
 import java.util.ArrayList;
@@ -58,7 +59,9 @@ public class RecyclerProdutosPedidosAdapter extends RecyclerView.Adapter<Recycle
                 @Override
                 public void onClick(View v) {
                     Context context = v.getContext();
-                    Intent intent = new Intent(context, ProdutosActivity.class);
+
+                    Intent intent = new Intent(context, ProdutosPedidosActivity.class);
+
                     context.startActivity(intent);
                 }
             });
